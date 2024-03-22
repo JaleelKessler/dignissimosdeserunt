@@ -1,0 +1,16 @@
+{
+  "extends": "@evmts/tsconfig/base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "composite": true,
+    "outDir": "types",
+    "skipLibCheck": true,
+    // this should be "Bundler" but don't want to fight a broken type
+    "moduleResolution": "Node",
+    "module": "ESNext"
+  },
+  "include": [
+    "src",
+    "src/**/*.json"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "@evmts/docs",
+	"version": "0.0.1",
+	"private": true,
+	"contributors": [
+		"Will Cory <willcory10@gmail.com>"
+	],
+	"type": "module",
+	"scripts": {
+		"build": "bun build:dist",
+		"build:dist": "bun run vitepress build .",
+		"dev": "bun run vitepress dev .",
+		"format": "rome format . --write",
+		"format:check": "rome format .",
+		"lint": "rome check . --apply-unsafe",
+		"lint:check": "rome check . --verbose",
+		"preview": "vitepress preview ."
+	},
+	"devDependencies": {
+		"@vue/runtime-dom": "^3.3.7",
+		"@vue/server-renderer": "^3.3.7",
+		"rome": "^12.1.3",
+		"vitepress": "1.0.0-rc.24"
+	}
+}
